@@ -79,7 +79,7 @@ This project demonstrates clear thinking, learning under pressure, and system de
 To Compile and build :
 =====================
 
-Download :  git clone https://github.com/Saidmwalulu/RDBMSImplementation.git and switched to branch 'main'
+Download :  git clone https://github.com/Saidmwalulu/RDBMSImplementation.git and switch to branch 'main'
 Download : git clone https://github.com/sachinites/MathExpressionParser and switch to branch 'Oops'
 
 cd MathExpressionParser 
