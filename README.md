@@ -74,7 +74,7 @@ The goal was to understand how these components fit together in an RDBMS.
 
 # Motivation
 
-This project demonstrates clear thinking, learning under pressure, and system design fundamentals, which aligns with the intent of the Pesapal challenge.
+This project demonstrates clear thinking, learning under pressure, and system design fundamentals, which aligns with the intent of the Developer challenge.
 
 To Compile and build :
 =====================
