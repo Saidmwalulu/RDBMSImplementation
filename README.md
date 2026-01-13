@@ -1,30 +1,85 @@
-# RDBMSImplementation
-Implement your own RDBMs
+# Simple In-Memory RDBMS Challenge
 
-Snapshot from the project ( 31 Aug 2023 )
+Snapshot from the project ( 13 Jan 2026 )
 
-![Capture](https://github.com/sachinites/RDBMSImplementation/assets/17794924/d052caa5-5734-41a7-b00a-c04f1243b821)
-
+![Capture](https://github.com/Saidmwalulu/RDBMSImplementation/blob/main/output.png)
 
 
-Here is a complete Tutorial : http://chi.cs.uchicago.edu/chidb/index.html
+This project is a simplified, in-memory relational database management system (RDBMS) built as a Junior Developer Challenge.
 
-Lots of Research papers are here : http://www.cs.cmu.edu/afs/cs/academic/class/15721-f01/www/readings.html
+The focus of this implementation is understanding core database concepts, not building a production-ready system.
 
-There are many who have implemented this already on github.com
+# What It Supports
 
-More Projects here : http://chi.cs.uchicago.edu/index.html
+--> Interactive SQL REPL
 
-SQLite :
-https://www.sqlite.org/docs.html
-https://cstack.github.io/db_tutorial/parts/part1.html
-https://github.com/smparkes/sqlite/tree/master
-SQLite Database System: Design and Implementation (First Edition)
+--> Table creation with basic data types
+
+--> CRUD operations (INSERT, SELECT, UPDATE, DELETE)
+
+--> Primary key and unique key enforcement
+
+--> Indexing using B+ Trees
+
+--> Basic WHERE filtering
+
+--> Simple JOIN support
+
+--> Demo web app connecting to the database
+
+# High-Level Design
+SQL Input
+ → SQL Parser
+ → AST
+ → Query Execution Engine
+ → In-Memory Storage + Indexes
+
+
+- SQL input is parsed into an AST using an external parser library
+
+- The execution engine walks the AST and performs operations
+
+- Tables and records are stored in memory
+
+- Indexed columns use B+ Trees for fast lookup and constraint enforcement
+
+# Indexing & Keys
+
+--> Primary and unique keys are enforced using B+ Tree indexes
+
+--> Duplicate key inserts are rejected at execution time
+
+# Libraries & Acknowledgements
+
+To focus on learning database internals within a limited timeline, this project uses:
+
+--> A SQL parser library for query parsing
+
+--> A B+ Tree library for indexing
+
+--> libmexpr.a for expression evaluation
+
+These libraries were used transparently and intentionally.
+The goal was to understand how these components fit together in an RDBMS.
+
+# Limitations
+
+--> In-memory only (no persistence)
+
+--> No transactions or concurrency
+
+--> Limited SQL grammar
+
+--> Minimal query optimization
+
+# Motivation
+
+This project demonstrates clear thinking, learning under pressure, and system design fundamentals, which aligns with the intent of the Pesapal challenge.
 
 To Compile and build :
 =====================
 
-Download :  git clone https://github.com/Saidmwalulu/RDBMSImplementation.git and switched to branch 'DCB'
+Download :  git clone https://github.com/Saidmwalulu/RDBMSImplementation.git and switched to branch 'main'
 Download : git clone https://github.com/sachinites/MathExpressionParser and switch to branch 'Oops'
 
 cd MathExpressionParser 
@@ -32,9 +87,10 @@ git checkout Oops
 sh compile.sh
 
 cd RDBMSImplementation
-git checkout DCB
+git checkout main
 cd SqlParser
 sh compile.sh
+
 ./dbms.exe 
 
 
