@@ -84,11 +84,11 @@ Download : git clone https://github.com/sachinites/MathExpressionParser and swit
 
 cd MathExpressionParser 
 git checkout Oops
-sh compile.sh
+cd Course sh compile.sh
 
 cd RDBMSImplementation
 git checkout main
-cd SqlParser
+cd Course/SqlParser
 sh compile.sh
 
 ./dbms.exe 
