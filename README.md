@@ -80,7 +80,7 @@ To Compile and build :
 =====================
 
 Download :  git clone https://github.com/Saidmwalulu/RDBMSImplementation.git and switch to branch 'main'
-Download : git clone https://github.com/sachinites/MathExpressionParser and switch to branch 'Oops'
+Download : git clone https://github.com/Saidmwalulu/MathExpressionParser and switch to branch 'Oops'
 
 cd MathExpressionParser 
 git checkout Oops
